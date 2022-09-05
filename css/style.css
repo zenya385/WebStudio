@@ -1,0 +1,113 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .link {
+    text-decoration: none;
+    display: flex;
+  }
+
+body {
+    background-color: #ffffff;
+    color: #757575;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    /* margin: 0; */
+    
+}
+
+.page-header {
+    /* height: 80px; */
+    border-bottom: 1px solid #ececee;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =================== Логотип ===================== */
+
+.logo{
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.web {
+    color: #2196F3;
+
+}
+
+.studio {
+    color: #000000;
+   
+}
+ 
+/* =================== Навігаційне меню ===================== */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.menu-nav {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+}
+
+.menu-nav .link:hover,
+.menu-nav .link:focus {
+    color: #2196f3;
+}
+
+.menu-nav__item {
+    margin-right: 50px;
+}
+
+.menu-nav__link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-contact {
+    display: flex;
+   
+  
+}
+
+.header-contact__item{
+
+}
+ 
