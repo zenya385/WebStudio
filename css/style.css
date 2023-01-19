@@ -11,6 +11,7 @@ p {
 
 a {
     text-decoration: none;
+    display: flex;
 }
 
 ul {
@@ -21,33 +22,42 @@ ul {
 
 img {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
 }
 
-.link {
-    /* display: flex; */
-}
+/* .link {
+    display: flex;
+}*/
 
 body {
     background-color: #ffffff;
     color: #757575;
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em; */
     /* margin: 0; */
 
 }
 
-.page-header {
-    /* height: 80px; */
-    border-bottom: 1px solid #ececee;
-}
 
-.page-header .container {
+/* .page-header {
+    border-bottom: 1px solid #ececee;
+} */
+
+.page-header {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 215px;
+    /* padding: 0 215px; */
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
 }
 
 /* =================== Логотип ===================== */
@@ -76,6 +86,15 @@ body {
     justify-content: space-between;
     margin-top: 32px;
     margin-bottom: 32px;
+
+    /* max-width: 1170px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px; */
+
 }
 
 .menu-nav {
@@ -85,9 +104,13 @@ body {
 }
 
 .menu-nav .link:hover,
-.menu-nav .link:focus {
+.header-contact .link:hover {
     color: #2196f3;
 }
+
+/* .header-contact .link:hover {
+    color: #2196f3;
+} */
 
 .menu-nav__item {
     margin-right: 50px;
@@ -117,61 +140,105 @@ body {
     letter-spacing: 0.02em;
 }
 
+/* ============================= Герой ============================ */
+
 .hero {
-    width: 1600px;
     height: 600px;
     background-color: darkslategrey;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
-}
 
-/* =================================================== */
-
-/* .box {
-    width: 1600px;
-    height: 400px;
-    background-color: aqua;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.text {
-    width: 400px;
+.hero-title {
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
 }
 
-.hero-icon-box {
-   
-    width: 1000px;
-    height: 200px;
-    border: 1px solid red;
-    position: absolute;
-    top: 100px;
-    left: 20px;
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 10px 24px;
+    display: flex;
     align-items: center;
+    /* text-align: center; */
+    cursor: pointer;
 }
 
-.icon-list {
+.hero-button:hover {
+    background-color: #188CE8;
+}
+
+
+/* ====================== особливості (feature) =============================== */
+
+
+.feature {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    width: 100%;
+    /* padding-left: 215px;
+    padding-right: 215px; */
+}
+
+.feature-list {
     display: flex;
-    justify-content: space-around;
-  
+    justify-content: space-between;
 
 }
 
-.icon {
-    width: 150px;
-    height: 90px;
-    border: 1px solid red;
-    margin-top: 30px;
-    background-image: url(../image/Img.jpg);
-    box-shadow: 10px 10px #ffffff;
+
+.feture-item {
+    width: 270px;
 }
 
-.i-text {
-    display: flex;
-    width: 150px;
-    color: #fff;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-} */
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.wrap-icon {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 102px;
+}

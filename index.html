@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,13 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -25,31 +30,91 @@
                     <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакти</a></li>
                 </ul>
                 <ul class="header-contact list">
-                    <li class="header-contact__item"><a class="header-contact__link"
-                            href="mailto">info@devstudio.com</a></li>
-                    <li class="header-contact__item"><a class="header-contact__link" href="tel">+38 096 111 11
-                            11</a></li>
+                    <li class="header-contact__item"><a class="header-contact__link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="header-contact__item"><a class="header-contact__link link" href="tel:+380961111111">+38
+                            096
+                            111 11 11</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<main>
+    <main>
         <!-- Герой -->
         <section class="hero">
-            <h1>Ефективні рішення для вашого бізнес</h1>
-            <button>Замовити послугу</button>
-    
+            <h1 class="hero-title">Ефективні рішення для вашого бізнес</h1>
+            <button type="button" class="hero-button">Замовити послугу</button>
         </section>
-          <!--Особливості -->
-          <section class="section">
+
+        <section class="feature">
             <div class="container">
                 <ul class="feature-list">
-                    <li class="feature-list__item"></li>
+                    <li class="feture-item">
+                        <div class="wrap-icon">
+                            <svg class="icon2" width="65" height="70">
+                                <use href="image/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">УВАГА ДО ЛЕТАЛЕЙ</h3>
+                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.</p>
+                    </li>
+                    <li class="feture-item">
+                        <div class="wrap-icon">
+                            <svg class="icon2" width="65" height="70">
+                                <use href="image/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">ПУНКТУАЦІЯ</h3>
+                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.</p>
+                    </li>
+                    <li class="feture-item">
+                        <div class="wrap-icon">
+                            <svg class="icon2" width="65" height="70">
+                                <use href="image/sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">ПЛАНУВАННЯ</h3>
+                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.</p>
+                    </li>
+                    <li class="feture-item">
+                        <div class="wrap-icon">
+                            <svg class="icon2" width="65" height="70">
+                                <use href="image/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.</p>
+                    </li>
                 </ul>
             </div>
-          </section>
-</main>
- 
+        </section>
+        <!--Чи ми займаємось-->
+        <section class="section section-works">
+            <div class="container">
+                <h2 class="title-secondary">Чим ми займаємося</h2>
+                <ul class="list">
+                    <li class="item">
+                        <img src="./image/box1.jpg" alt="написання програм" width="370" />
+                    </li>
+                    <li class="item">
+                        <img src="./image/box2.jpg" alt="разработка мобильноих версій" width="370" />
+                    </li>
+                    <li class="item">
+                        <img src="./image/box3.jpg" alt="різноманітна кольорова гамма" width="370" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
