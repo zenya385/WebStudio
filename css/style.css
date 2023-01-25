@@ -34,8 +34,8 @@ body {
     background-color: #ffffff;
     color: #757575;
     font-family: Roboto, sans-serif;
-    /* letter-spacing: 0.03em; */
-    /* margin: 0; */
+    letter-spacing: 0.03em
+        /* margin: 0; */
 
 }
 
@@ -60,7 +60,7 @@ body {
     max-width: 1170px;
 }
 
-/* =================== Логотип ===================== */
+/** =================== Логотип ===================== */
 
 .logo {
     font-family: 'Raleway';
@@ -79,22 +79,13 @@ body {
 
 }
 
-/* =================== Навігаційне меню ===================== */
+/** =================== Навігаційне меню ===================== */
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 32px;
     margin-bottom: 32px;
-
-    /* max-width: 1170px;
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px; */
-
 }
 
 .menu-nav {
@@ -107,10 +98,6 @@ body {
 .header-contact .link:hover {
     color: #2196f3;
 }
-
-/* .header-contact .link:hover {
-    color: #2196f3;
-} */
 
 .menu-nav__item {
     margin-right: 50px;
@@ -140,7 +127,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* ============================= Герой ============================ */
+/** ============================= Герой ============================ */
 
 .hero {
     height: 600px;
@@ -195,12 +182,12 @@ body {
 }
 
 
-/* ====================== особливості (feature) =============================== */
+/** ====================== особливості (feature) =============================== */
 
 
 .feature {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
     width: 100%;
     /* padding-left: 215px;
     padding-right: 215px; */
@@ -242,3 +229,118 @@ body {
     margin-bottom: 30px;
     padding: 25px 102px;
 }
+
+/** ====================== Чи ми займаємось (works) =============================== */
+
+.section-works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    margin-bottom: 50px;
+
+}
+
+.work-list {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.list {}
+
+.item {}
+
+/** ==================== Наша команда (team) =============== */
+
+.section-team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.section-title {}
+
+.team-list {
+    display: flex;
+}
+
+.item {}
+
+.card-team {}
+
+.title {}
+
+.text {}
+
+/** ==================== Постійні клієнти (clients) =============== */
+
+
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    background-color: #E5E5E5;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 30px;
+
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+}
+
+.clients-item:hover .clients-icon {
+    fill: #2196F3;
+}
+
+.clients-item:hover {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+
+}
+
+/** ==================== footer =============== */
+
+.footer {}
+
+.section-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.container {}
+
+.logo {}
+
+.contact {}
+
+.address {}
+
+.link {}
