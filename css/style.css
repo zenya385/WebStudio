@@ -33,7 +33,7 @@ img {
 body {
     background-color: #ffffff;
     color: #757575;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
     letter-spacing: 0.03em
         /* margin: 0; */
 
@@ -55,9 +55,9 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1170px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    max-width: 1200px;
 }
 
 /** =================== Логотип ===================== */
@@ -201,7 +201,9 @@ body {
 
 
 .feture-item {
-    width: 270px;
+    /* width: 270px; */
+    flex-basis: calc((100% - 3 * 30px) / 4);
+
 }
 
 .feature-title {
@@ -255,9 +257,10 @@ body {
     margin-bottom: 50px;
 }
 
-.list {}
-
-.item {}
+.work-item {
+    width: calc((100% - 2 * 30px) / 2);
+    /* width: calc((100% - 90px) / 4); */
+}
 
 /** ==================== Наша команда (team) =============== */
 
@@ -270,17 +273,39 @@ body {
 
 .section-title {}
 
+.element {}
+
 .team-list {
     display: flex;
 }
 
-.item {}
+.team-item {
+    /* flex-basis: calc((100% - 3 * 30px) / 3); */
+    width: calc((100% - 90px) / 3);
+}
+
+.element {
+    flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
+}
 
 .card-team {}
 
-.title {}
+.title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
 
-.text {}
+    margin-top: 30px;
+}
+
+.text {
+    margin-top: 10px;
+    text-align: center;
+    color: #757575
+}
 
 /** ==================== Постійні клієнти (clients) =============== */
 
@@ -297,7 +322,7 @@ body {
 }
 
 .clients-item {
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
