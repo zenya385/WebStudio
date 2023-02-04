@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -7,37 +7,36 @@ h6,
 p {
     margin: 0;
     padding: 0;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     display: flex;
-}
-
+} */
+/* 
 ul {
     padding-left: 0;
     list-style: none;
     margin: 0;
-}
+} */
 
-img {
+/* img {
     display: block;
-    /* width: 100%; */
+    width: 100%;
     height: auto;
-}
+} */
 
 /* .link {
     display: flex;
 }*/
 
-body {
+/* body {
     background-color: #ffffff;
     color: #757575;
     font-family: Roboto;
-    letter-spacing: 0.03em
-        /* margin: 0; */
-
-}
+    letter-spacing: 0.03em */
+/* margin: 0; */
+/* } */
 
 /* .container {
   padding-left: 15px;
@@ -153,7 +152,7 @@ body {
 
 .hero {
     height: 600px;
-    background-color: darkslategrey;
+    /* background-color: darkslategrey;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
 
@@ -183,7 +182,7 @@ body {
 }
 
 .hero-button {
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
@@ -196,7 +195,7 @@ body {
     display: flex;
     align-items: center;
     /* text-align: center; */
-    cursor: pointer;
+    /* cursor: pointer;  */
 }
 
 .hero-button:hover {
@@ -228,8 +227,8 @@ body {
 }
 
 .wrap-icon {
-    background-color: #F5F4FA;
-    border-radius: 4px;
+    /* background-color: #F5F4FA;
+    border-radius: 4px; */
     margin-bottom: 30px;
     padding: 25px 102px;
 }
@@ -241,16 +240,16 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .feature-text {
-    font-weight: 400;
+    /* font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: #757575; */
 }
 
 
@@ -304,10 +303,6 @@ body {
 .team-item {
     /* flex-basis: calc((100% - 3 * 30px) / 3); */
     width: calc((100% - 90px) / 3);
-}
-
-.element {
-    flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
 }
 
 .card-team {}

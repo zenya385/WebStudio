@@ -1,0 +1,271 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  color: #757575;
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/** =================== Header ===================== */
+.page-header {}
+
+
+.menu {}
+
+/** =================== Логотип ===================== */
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.web {
+  color: #2196F3;
+}
+
+.studio {
+  color: #000000;
+}
+
+/** =================== Навігаційне меню ===================== */
+.menu-nav {
+  display: none;
+}
+
+.list {}
+
+.menu-nav__item {}
+
+.menu-nav__link {}
+
+.link {}
+
+.header-contact {
+  display: none;
+}
+
+.header-contact__item {}
+
+.header-contact__link {}
+
+.header-icon {}
+
+/** ============================= Герой ============================ */
+.hero {
+  background-color: darkslategrey;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img-480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #188CE8;
+}
+
+/** ====================== особливості (feature) =============================== */
+
+.feature {}
+
+.feature-list {}
+
+.feture-item {}
+
+.wrap-icon {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  text-align: center;
+
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.icon {}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/** ====================== Чи ми займаємось (works) =============================== */
+
+.section-works {
+  display: none;
+}
+
+
+.work-list {}
+
+.work-item {}
+
+/** ==================== Наша команда (team) =============== */
+
+.section-team {
+  background-color: #F5F4FA;
+}
+
+.section-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  margin-bottom: 30px;
+}
+
+.team-list {
+  margin-bottom: 30px;
+}
+
+.team-item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.card-team {}
+
+.team-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  text-align: center;
+  color: #757575
+}
+
+.section-clients {}
+
+.clients-list {}
+
+.clients-item {}
+
+.clients-icon {}
+
+.footer {}
+
+.section-footer {}
+
+.contact {}
+
+.address {}
