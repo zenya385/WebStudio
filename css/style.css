@@ -254,18 +254,97 @@ body {
   color: #757575
 }
 
-.section-clients {}
+/** ==================== Постійні клієнти (clients) =============== */
 
-.clients-list {}
+.clients-title {
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  color: #212121;
 
-.clients-item {}
+  text-align: center;
 
-.clients-icon {}
+  margin-bottom: 30px;
+}
 
-.footer {}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.section-footer {}
+.clients-item {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 
-.contact {}
+  width: 210px;
+  height: 90px;
+  width: calc((100% - 15px * 4) / 2);
+  /* width: calc((100% - 4 * 15px) / 2); */
+  /* flex-basis: calc((100% - 60px) / 2); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.clients-icon {
+  fill: #AFB1B8;
+}
+
+.clients-item:hover .clients-icon {
+  fill: #2196F3;
+}
+
+.clients-item:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #2F303A;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-container {}
+
+.logo {
+  font-style: 24px;
+
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
 
 .address {}
+
+.footer-link {
+  display: block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
