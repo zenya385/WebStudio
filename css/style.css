@@ -52,7 +52,10 @@ body {
 }
 
 /** =================== Header ===================== */
-.page-header {}
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 
 .menu {}
@@ -313,8 +316,12 @@ body {
 
 .footer-container {}
 
-.logo {
-  font-style: 24px;
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
 
   display: block;
   margin-bottom: 20px;
