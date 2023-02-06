@@ -58,7 +58,10 @@ body {
 }
 
 
-.menu {}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
 
 /** =================== Логотип ===================== */
 .logo {
@@ -73,6 +76,24 @@ body {
 
 .studio {
   color: #000000;
+}
+
+/** =================== Мобільне меню-бургер ===================== */
+
+.menu-open {
+  /* display: flex; */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.menu-open-icon {
+  /* fill: #212121; */
+}
+
+.menu-open-icon:hover {
+  fill: #188CE8
 }
 
 /** =================== Навігаційне меню ===================== */
