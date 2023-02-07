@@ -105,8 +105,9 @@ ul {
     color: #2196f3;
 }
 
-.menu-nav__item {
-    margin-right: 50px;
+.menu-nav .link:hover,
+.header-contact .link:hover {
+    color: #2196f3;
 }
 
 .menu-nav__link {

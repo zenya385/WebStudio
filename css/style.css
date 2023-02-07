@@ -51,6 +51,32 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+
+
+
 /** =================== Header ===================== */
 .page-header {
   padding-top: 16px;
@@ -62,6 +88,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 
 /** =================== Логотип ===================== */
 .logo {
@@ -81,11 +118,9 @@ body {
 /** =================== Мобільне меню-бургер ===================== */
 
 .menu-open {
-  /* display: flex; */
   background-color: transparent;
   border: none;
   cursor: pointer;
-  justify-self: end;
 }
 
 .menu-open-icon {
@@ -96,28 +131,88 @@ body {
   fill: #188CE8
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
 /** =================== Навігаційне меню ===================== */
 .menu-nav {
   display: none;
 }
 
-.list {}
-
-.menu-nav__item {}
-
-.menu-nav__link {}
-
-.link {}
-
 .header-contact {
   display: none;
 }
 
-.header-contact__item {}
+@media screen and (min-width: 768px) {
 
-.header-contact__link {}
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 32px;
+  }
 
-.header-icon {}
+  .menu-nav {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+  }
+
+  .menu-nav .link:hover,
+  .header-contact .link:hover {
+    color: #2196f3;
+  }
+
+  .menu-nav__item {
+    margin-right: 57px;
+  }
+
+  .menu-nav__link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-contact__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  .header-icon {
+    fill: #757575;
+    margin-right: 10px;
+  }
+
+  .header-contact__link {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .header-contact__link:hover {
+    color: #2196F3;
+  }
+
+  .header-contact__link:hover .header-icon {
+    fill: #188CE8;
+  }
+
+  .header-contact li:nth-child(2) {
+    /* margin-left: 50px; */
+  }
+}
 
 /** ============================= Герой ============================ */
 .hero {
@@ -209,6 +304,20 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+@media screen and (min-width:768px) {}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin: -7.5px;
+}
+
+.feture-item {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 /** ====================== Чи ми займаємось (works) =============================== */
