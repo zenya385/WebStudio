@@ -93,6 +93,14 @@ body {
     padding: 0;
     /* margin: 0 auto; */
   }
+
+  @media screen and (min-width: 1200px) {
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 /** =================== Логотип ===================== */
@@ -110,6 +118,11 @@ body {
   color: #000000;
 }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .web {
+    color: #000000;
+  }
+}
 
 /** =================== Мобільне меню-бургер ===================== */
 
@@ -201,12 +214,34 @@ body {
   .header-contact__link:hover .header-icon {
     fill: #188CE8;
   }
+
+
+}
+
+@media screen and (min-width: 1199px) {
+  .header-contact {
+    min-width: 340px;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .header-contact li:nth-child(2) {
+    margin-left: 30px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 /** ============================= Герой ============================ */
 .hero {
   background-color: darkslategrey;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero-img-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -254,6 +289,20 @@ body {
   background-color: #188CE8;
 }
 
+@media screen and (min-width:768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/hero-tablet.jpg);
+
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/dektop/Img.jpg);
+  }
+
+}
+
 /** ====================== особливості (feature) =============================== */
 
 .feature {}
@@ -295,16 +344,29 @@ body {
   color: #757575;
 }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  margin: -7.5px;
+
+@media screen and (min-width:768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin: -7.5px;
+  }
+
+  .feture-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  .feature-title {
+    text-align: start;
+  }
 }
 
-.feture-item {
-  width: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
+@media screen and (min-width:1200px) {
+  .feture-item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 
@@ -312,6 +374,29 @@ body {
 
 .section-works {
   display: none;
+}
+
+@media screen and (min-width:1200px) {
+  .section-works {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .work-list {
+    display: flex;
+  }
+
+  .work-item {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 
 /** ==================== Наша команда (team) =============== */
@@ -370,6 +455,26 @@ body {
   color: #757575
 }
 
+@media screen and (min-width:768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  .team-item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+
+}
+
 
 /** ==================== Постійні клієнти (clients) =============== */
 
@@ -418,6 +523,21 @@ body {
 .clients-item:hover {
   border: 1px solid #2196f3;
   cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+
+  .clients-item {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .clients-item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+
 }
 
 .footer {
@@ -471,4 +591,17 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+  .footer-logo-span,
+  .footer-logo {
+    color: #000000;
+  }
+
+  /* .footer-logo{
+  color: #000000;
+  } */
+
 }
