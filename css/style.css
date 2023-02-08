@@ -74,15 +74,11 @@ body {
   }
 }
 
-
-
-
 /** =================== Header ===================== */
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
 
 .menu {
   display: flex;
@@ -99,7 +95,6 @@ body {
   }
 }
 
-
 /** =================== Логотип ===================== */
 .logo {
   font-family: 'Raleway';
@@ -114,6 +109,7 @@ body {
 .studio {
   color: #000000;
 }
+
 
 /** =================== Мобільне меню-бургер ===================== */
 
@@ -136,6 +132,7 @@ body {
     display: none;
   }
 }
+
 
 /** =================== Навігаційне меню ===================== */
 .menu-nav {
@@ -184,10 +181,6 @@ body {
     flex-direction: column;
   }
 
-  .header-contact__item:not(:last-child) {
-    margin-bottom: 13px;
-  }
-
   .header-icon {
     fill: #757575;
     margin-right: 10px;
@@ -207,10 +200,6 @@ body {
 
   .header-contact__link:hover .header-icon {
     fill: #188CE8;
-  }
-
-  .header-contact li:nth-child(2) {
-    /* margin-left: 50px; */
   }
 }
 
@@ -306,8 +295,6 @@ body {
   color: #757575;
 }
 
-@media screen and (min-width:768px) {}
-
 .feature-list {
   display: flex;
   flex-wrap: wrap;
@@ -320,16 +307,12 @@ body {
   margin: 15px;
 }
 
+
 /** ====================== Чи ми займаємось (works) =============================== */
 
 .section-works {
   display: none;
 }
-
-
-.work-list {}
-
-.work-item {}
 
 /** ==================== Наша команда (team) =============== */
 
@@ -387,6 +370,7 @@ body {
   color: #757575
 }
 
+
 /** ==================== Постійні клієнти (clients) =============== */
 
 .clients-title {
@@ -412,8 +396,7 @@ body {
   width: 210px;
   height: 90px;
   width: calc((100% - 15px * 4) / 2);
-  /* width: calc((100% - 4 * 15px) / 2); */
-  /* flex-basis: calc((100% - 60px) / 2); */
+
 
   display: flex;
   justify-content: center;
@@ -457,6 +440,10 @@ body {
   margin-bottom: 20px;
   color: #fff;
   text-align: center;
+}
+
+.footer-logo-span {
+  color: #2196f3;
 }
 
 .contact {
