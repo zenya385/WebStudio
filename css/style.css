@@ -499,14 +499,13 @@ body {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 
-  width: 210px;
-  height: 90px;
+
   width: calc((100% - 15px * 4) / 2);
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 20px 0;
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
